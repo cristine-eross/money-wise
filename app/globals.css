@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-black text-stone-200 relative
+    }
+
+    button {
+        @apply  transition-all duration-100 hover:scale-110 
+    }
+}
+
+@layer utilities {
+    .btn {
+        @apply  self-start px-4 py-2 text-lg capitalize rounded-xl 
+    }
+
+    .btn-danger {
+        @apply border bg-cyan-600 border border-stone-200 text-stone-900 font-bold
+    }
+
+    .btn-primary {
+        @apply bg-cyan-600 border border-stone-200 text-stone-900 font-bold
+    }
+    
+    .btn-primary-outline {
+        @apply border border-stone-200 border-cyan-700
+    }
+
+    .input-group {
+        @apply flex flex-col gap-4
+    }
+
+    .input {
+        @apply px-4 py-2 bg-stone-100 text-stone-900 rounded-xl
+    }
+}
